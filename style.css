@@ -1,0 +1,201 @@
+/* Font */
+@font-face {
+  font-family: 'Roboto';
+  src: url('roboto-2014/Roboto.ttf') format('truetype');
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* height of navbar */
+}
+
+/* Global */
+body {
+  background-color: #232946;
+  color: #b8c1ec;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #fffffe;
+}
+
+.text-muted {
+  color: #b8c1ec !important;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #232946 !important;
+}
+
+.navbar .navbar-brand {
+  color: #eebbc3;
+}
+
+.navbar .nav-link {
+  color: #fffffe;
+  transition: 0.3s;
+  border-radius: 20px;
+  padding: 6px 14px;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+  color: #232946;
+  background-color: #eebbc3;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #eebbc3;
+  border-color: #eebbc3;
+  color: #232946;
+}
+
+.btn-primary:hover {
+  background-color: #fffffe;
+  border-color: #fffffe;
+}
+
+.btn-outline-secondary {
+  color: #fffffe;
+  border-color: #fffffe;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #eebbc3;
+  color: #232946;
+  border-color: #eebbc3;
+}
+
+/* Section Layout */
+section {
+  min-height: 100vh;
+  padding: 6rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 16px;
+  background-color: #121629;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.alt-section {
+  background-color: #1b1f3b;
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(90deg, #eebbc3, #fffffe, #b8c1ec);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.text-hero .name {
+  color: #fffffe;
+}
+
+/* Profile Photo */
+.profile-photo {
+  width: 180px;
+  height: 220px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+  border: 3px solid #eebbc3;
+  background-color: #121629;
+  object-fit: cover; 
+  transition: 0.5s;
+}
+
+@media (min-width: 768px) {
+  .profile-photo {
+    width: 220px;
+    height: 260px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .profile-photo {
+    width: 260px;
+    height: 320px;
+  }
+}
+
+.pic-hover img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* Accent Color Shortcut */
+.text-accent {
+  color: #eebbc3;
+}
+
+/* About Section */
+.about-para {
+  font-size: large;
+}
+
+/* Cards */
+.skill-card {
+  background-color: #121629;
+  border-radius: 16px;
+  color: #b8c1ec;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  height: 100%;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  background-color: #1b1f3b;
+}
+
+.skill-card h4, .skill-card h5 {
+  color: #eebbc3;
+}
+
+.skill-card ul li {
+  padding: 6px 0;
+  font-size: 1rem;
+}
+
+/* About / Education / Projects Cards */
+.about-card, .placeholder-box {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  background-color: #1b1f3b;
+}
+
+/* Buttons Accent */
+.btn-accent {
+  background-color: #eebbc3;
+  color: #232946;
+  border: none;
+}
+
+.btn-accent:hover {
+  background-color: #fffffe;
+  color: #232946;
+}
+
+/* Footer */
+footer {
+  background-color: #232946;
+  color: #b8c1ec;
+}
+
+footer a {
+  color: #fffffe;
+}
+
+.idk-top {
+  margin-top: -60px;
+  margin-bottom: -100px;
+}
